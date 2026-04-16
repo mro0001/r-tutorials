@@ -11,7 +11,7 @@ webr:
 %%| fig-width: 9
 %%| fig-height: 2.5
 flowchart LR
-    A["Step 1:\nScripts & Projects"] --> B["Step 2:\nWorking Directory"] --> C["Step 3:\nLibraries"] --> D["Step 4:\nImport & Export"]
+    A["Step 1:<br>Scripts & Projects"] --> B["Step 2:<br>Working Directory"] --> C["Step 3:<br>Libraries"] --> D["Step 4:<br>Import & Export"]
     style D fill:#1a1a1a,stroke:#1a1a1a,color:#fff
     linkStyle default stroke:#adb5bd,stroke-width:2px
 ```
