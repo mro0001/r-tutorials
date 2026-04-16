@@ -1,0 +1,15 @@
+{
+  "hash": "ea71eab042c3c43df0e971e3af97e2ee",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"1. Scripts & Projects\"\nengine: knitr\nfilters:\n  - webr\nwebr:\n  packages: []\n---\n\n```{mermaid}\n%%| fig-width: 9\n%%| fig-height: 2.5\nflowchart LR\n    A[\"Step 1:\\nScripts & Projects\"] --> B[\"Step 2:\\nWorking Directory\"] --> C[\"Step 3:\\nLibraries\"] --> D[\"Step 4:\\nImport & Export\"]\n    style A fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px\n```\n\n## Scripts\n\nYou can type your R code into two places: either in the console (i.e., the bottom left corner of RStudio) or into a script (i.e., the top left corner of RStudio). It is good practice to do everything in a script because you can troubleshoot your code much more easily and reproduce everything you do.\n\nYou can open a new script by clicking the dropdown menu **File >> New File >> R Script**. Alternatively, in RStudio you can click on the icon that looks like a plus on top of a black sheet of paper. It will provide a dropdown menu that will allow you to open a new R script.\n\n![Opening a new script in RStudio](images/RStudio - new script menu.png)\n\n[Go here for more information on R Scripts.](https://r4ds.hadley.nz/workflow-scripts#scripts)\n\n## R Projects\n\nA lot of set up in R is easy to organize using R projects. However, that is beyond the scope of this tutorial.\n\n[Go here for information on R projects and setting one up.](https://r4ds.hadley.nz/workflow-scripts#projects)\n\n## Starting with a clean slate\n\nTo see if your script is working or just to start fresh, the absolute best practice is to **restart RStudio** to clear its memory. But you need to make a change to the global options first so it does not automatically load your last session.\n\nTo do this, go to **Tools >> Global Options** and uncheck \"Restore .RData into workspace at startup\". This will clear the workspace every time.\n\nA second option, which people use when a quick reset is needed, is the function `rm(list=ls())`. This clears all objects in R memory, but it does not detach libraries you have loaded, nor does it reset global options. It is always recommended to restart RStudio when you want to work with a truly clean slate. But many times a quick `rm(list=ls())` will suffice.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "fd8df353028fcb9bed688530b54d071e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"3. Libraries\"\nengine: knitr\nfilters:\n  - webr\nwebr:\n  packages: []\n---\n\n```{mermaid}\n%%| fig-width: 9\n%%| fig-height: 2.5\nflowchart LR\n    A[\"Step 1:\\nScripts & Projects\"] --> B[\"Step 2:\\nWorking Directory\"] --> C[\"Step 3:\\nLibraries\"] --> D[\"Step 4:\\nImport & Export\"]\n    style C fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px\n```\n\n## Libraries\n\nThe power of R comes from user-created libraries. These are sometimes referred to as packages. To access these libraries in R you need to first install them with `install.packages()` and then load them with `library()`.\n\nGood news is that you only need to install packages once, but you need to load them to your script at the start of every session. Loading a library will then give you access to the functions within the library.\n\nLet's practice by loading the packages **here** and **tidyverse**:\n\n```r\n### Install the packages (only needed once)\ninstall.packages(c(\"here\",\"tidyverse\"))\n\n### Load the packages (needed every session)\nlibrary(here)\nlibrary(tidyverse)\n```\n\n## Getting help\n\nAll R packages on the CRAN network have accompanying documentation. By typing `?` in front of a package name (after loading it with `library()`), you can access its documentation. Many packages also have introductions and tutorials.\n\nIf you have a question about a specific function in a package, type `??` in front of the function name:\n\n```r\n### Load packages first\nlibrary(here)\nlibrary(tidyverse)\n\n### Get package documentation\n?here\n?tidyverse\n\n### Search for function help\n??here\n```\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
