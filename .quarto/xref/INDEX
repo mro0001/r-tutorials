@@ -1,0 +1,35 @@
+{
+  "setup-libraries.qmd": {
+    "setup-libraries.html": "2aa8b0de"
+  },
+  "setup-data.qmd": {
+    "setup-data.html": "cbb48dda"
+  },
+  "setup-summary.qmd": {
+    "setup-summary.html": "b4899a32"
+  },
+  "functions.qmd": {
+    "functions.html": "6162ff92"
+  },
+  "knowledge-check.qmd": {
+    "knowledge-check.html": "adfd5afd"
+  },
+  "setup-overview.qmd": {
+    "setup-overview.html": "541ca786"
+  },
+  "index.qmd": {
+    "index.html": "b71210cc"
+  },
+  "setup-working-dir.qmd": {
+    "setup-working-dir.html": "fade1ea4"
+  },
+  "objects.qmd": {
+    "objects.html": "697eda91"
+  },
+  "setup-scripts.qmd": {
+    "setup-scripts.html": "74102fd2"
+  },
+  "operators.qmd": {
+    "operators.html": "65590118"
+  }
+}

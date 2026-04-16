@@ -1,0 +1,365 @@
+[
+  {
+    "objectID": "operators.html",
+    "href": "operators.html",
+    "title": "3. Operators",
+    "section": "",
+    "text": "flowchart LR\n    A((Objects)) --&gt; B((Functions)) --&gt; C((Operators))\n    style C fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px\n\n\n\n\n\n\nWhile R can be boiled down to objects and functions, it also does a good job handling mathematical calculations and logic.\n\nMath OperatorsLogic Operators\n\n\nThe following commands are the basic arithmetic operators used in R.\n\n\n\nMath\nOperator\n\n\n\n\nAddition\n+\n\n\nSubtraction\n-\n\n\nMultiplication\n*\n\n\nDivision\n/\n\n\nExponent\n^\n\n\n\n\n\n\n\n\n\nTry it yourself — experiment with each math operator\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nOften, you will want to create an object with the help of some logical operators. The following are the logical operators used in R:\n\n\n\nLogic\nOperator\n\n\n\n\nLess Than\n&lt;\n\n\nGreater Than\n&gt;\n\n\nLess Than or Equal to\n&lt;=\n\n\nGreater Than or Equal to\n&gt;=\n\n\nEqual to\n==\n\n\nNot Equal to\n!=\n\n\nOr\n\\|\n\n\nAnd\n&\n\n\n\nFor example, logical_test &lt;- pie == pie_not_number\n\n\n\n\n\n\nRun this example — logical comparisons return TRUE or FALSE\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThis returns a new class of logical that is either TRUE or FALSE.\n\n\n\n\n\n\nRun this example — try and, or, and not operators\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nClick Next to review what you’ve learned and complete the Knowledge Check.",
+    "crumbs": [
+      "R Basics",
+      "3. Operators"
+    ]
+  },
+  {
+    "objectID": "objects.html",
+    "href": "objects.html",
+    "title": "1. Objects",
+    "section": "",
+    "text": "flowchart LR\n    A((Objects)) --&gt; B((Functions)) --&gt; C((Operators))\n    style A fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px\n\n\n\n\n\n\nR is an object oriented language. You create “objects” and can apply functions to those objects. This section covers four sub-topics — work through each tab in order.\n\nCreating ObjectsObject NamesObject StructuresObject Classes\n\n\nThe most basic thing you need to learn is about the assignment operator &lt;-. This is how you create objects. The way this looks in code is the following:\nobject_name &lt;- value\nSo lets pretend we wanted to make an object named x with a value of 4.\nWe would enter the following code x &lt;- 4. Give it a try and run the following code x &lt;- 4, then enter x and R should return 4.\n\n\n\n\n\n\nRun this example\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nAfter running this, x is now an object whose value is 4.\n\nFor the R code game &lt;- 7, what is the name of the object?\n\n&lt;-\ngame\n7\n\n\n\nWhat is the value of y from the following code? x &lt;- 3, z &lt;- 10, y &lt;- x + 2\n\n10\n5\n15\n2\n\n\nSometimes you don’t want to create an object, but will want to make a comment in your code. If you put # in front of text, R will not process it. This allows you to make comments in your code.\n\n\n\n\n\n\nYour turn — create an object named uoidaho with a value of 100\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nuoidaho &lt;- 100\n\n\n\n\n\n\n\nYour turn — create an object called rulez with the value of 5\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nrulez &lt;- 5\n\n\n\n\n\n\n\nYour turn — create agreed by adding uoidaho and rulez\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nuoidaho &lt;- 100\nrulez &lt;- 5\n\nagreed &lt;- uoidaho + rulez\n\n\nWhat is the value of the object agreed from the above example?\n\n100\n5\n105\n\n\n\n\nR and computers in general are very good at following orders, the problem is that you need to be very specific or you might get an error message. R is very sensitive. When naming objects, use the following conventions:\n\nNo spaces\nLower case (R is sensitive to capitalization)\nUse _ instead of .\nUse descriptive names\nAvoid special characters like !@&\nDon’t start with a number (they can end with a number, but they can’t start with one)\n\nTake the following quiz and identify the problem with the following object names.\n\nWhat is wrong with the following object name? Click all that apply: University of Idaho &lt;- 100\n\nHas spaces\nMix of lower and upper case\nUse _ instead of .\nGeneric name\nUses special character and/or starts with a number\n\n\n\n\n\n\n\n\nYour turn — fix the name University of Idaho &lt;- 100\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nuniversity_of_idaho &lt;- 100\n\n\nWhat is wrong with the following object name? 10idaho! &lt;- 100\n\nHas spaces\nMix of lower and upper case\nUse _ instead of .\nGeneric name\nUses special character and/or starts with a number\n\n\n\n\n\n\n\n\nYour turn — fix the name 10idaho! &lt;- 100\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nidaho &lt;- 100\n\n\nWhat is wrong with the following object name? university.of.idaho &lt;- 100\n\nHas spaces\nMix of lower and upper case\nUse _ instead of .\nGeneric name\nUses special character and/or starts with a number\n\n\n\n\n\n\n\n\nYour turn — fix the name university.of.idaho &lt;- 100\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nuniversity_of_idaho &lt;- 100\n\n\n\nObjects come in many forms. In the previous section, we were making objects that represented a single atomistic value. However, objects can have complex structures such as vectors, matrix, array, dataframe, or list.\nFor the purpose of simplicity we will focus on vectors and dataframes. Unless you spend a lot of time programming, iterating, or looping, you will spend the majority of time working with dataframes and to a lesser extent, vectors.\nA vector takes a series of atomistic values to form an object.\nobject_name &lt;- vector\nA useful command is the concatenate command c(). This allows you to combine different elements separated by ,.\nFor example, object &lt;- c(\"value_1\",\"value_2\",\"value_3\")\n\n\n\n\n\n\nYour turn — create a vector named alphabet with values a, b, c, d\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nalphabet &lt;- c(\"a\",\"b\",\"c\",\"d\")\n\n\n\n\n\n\n\nYour turn — create a vector named pie with values 3, 14, 15, 926\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\npie &lt;- c(3,14,15,926)\n\nVectors can be made with numbers, strings in \"\" (i.e., characters/words), objects, or a combination of the two.\n\n\n\n\n\n\nYour turn — create a vector named pie_not_number with values 3, x, apple, and 7\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\npie_not_number &lt;- c(3,\"x\",\"apple\", 7)\n\n\nDataframe\nLets make a dataframe. Dataframes can be thought of as connected vectors with the same number of items.\nDataframes are composed of columns and rows and are the object structure used to analyze data. Columns represent variables, and rows represent observations in a dataframe. You can create a dataframe with the command data.frame() using the following structure:\ndataframe_name &lt;- data.frame(\n  column_name_1 = vector_1,\n  column_name_2 = vector_2,\n  ...\n)\n\n\n\n\n\n\nRun this example — build a dataframe and check its class\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nFor the value x &lt;- 86, object x has what object structure?\n\nAtomistic single value\nVector\nDataframe\n\n\n\nFor the value x &lt;- c(86,100,2), object x has what object structure?\n\nAtomistic single value\nVector\nDataframe\n\n\n\n\n\nAll objects have a class in R. This tells R how to handle the object. In dataframes, the data within a column needs a shared class, but different columns can have different classes. You can identify the class of an object with the argument/function class().\nclass(object_name)\nFor example, class(first_df) returns the value “data.frame” indicating that the object’s class is a data.frame.\nWhat is important is that when working in a dataframe, you will want to make sure the class of each of your columns (i.e., variables) is correct. To access a column from a data frame you need to use $ in the following way:\ndataframe_name$column_name\nUsing the $ operator, lets see what class the alpha column is from your first_df dataframe: class(first_df$alpha)\nIt should return “character”. This type of class is how strings are stored. The column named pie_num is a numeric class. Numbers are stored as either numeric (can include decimals) or integer (whole numbers only).\nThe main take away is that objects have a class and that you can determine what the class of an object is.\nstr() is a useful command and one that I use more than any other command in R. It shows the class, number of observations, variables, and the names and classes of each column.\n\n\n\n\n\n\nYour turn — try class() and str() on first_df\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nclass(first_df)\nstr(first_df)\n\n\n\n\n\n\n\nRun this example — check the class of each variable using $\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nReferencing first_df, what class is the variable alpha?\n\nDouble\nInteger\nCharacter\nLogical\n\n\n\nReferencing first_df, what class is the variable vowel?\n\nDouble\nInteger\nCharacter\nLogical",
+    "crumbs": [
+      "R Basics",
+      "1. Objects"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R Basics",
+    "section": "",
+    "text": "flowchart LR\n    A((Objects)) --&gt; B((Functions)) --&gt; C((Operators))\n    linkStyle default stroke:#adb5bd,stroke-width:2px",
+    "crumbs": [
+      "R Basics",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "R Basics",
+    "section": "Welcome",
+    "text": "Welcome\nIn this tutorial, we will cover the basics of R needed for all other tutorials. Once done, you should understand Objects, Functions, and Operators. Having a firm understanding of these concepts are necessary building blocks for more advanced work in R.\nUse the sidebar or the Next button at the bottom of each page to work through the tutorial in order.",
+    "crumbs": [
+      "R Basics",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#commands-used-in-this-tutorial",
+    "href": "index.html#commands-used-in-this-tutorial",
+    "title": "R Basics",
+    "section": "Commands used in this tutorial",
+    "text": "Commands used in this tutorial\n\n\n\nCommand\nPurpose\n\n\n\n\n&lt;-\nAssignment — create objects\n\n\nc()\nConcatenate values into a vector\n\n\ndata.frame()\nCreate a dataframe\n\n\n#\nComment — R ignores this line\n\n\nclass()\nCheck an object’s class\n\n\n$\nAccess a column in a dataframe\n\n\nstr()\nView an object’s full structure\n\n\n\nWhen you’re ready, click Next below to begin with Objects.",
+    "crumbs": [
+      "R Basics",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "knowledge-check.html",
+    "href": "knowledge-check.html",
+    "title": "Knowledge Check",
+    "section": "",
+    "text": "flowchart LR\n    A((Objects)) --&gt; B((Functions)) --&gt; C((Operators))\n    linkStyle default stroke:#adb5bd,stroke-width:2px",
+    "crumbs": [
+      "R Basics",
+      "Knowledge Check"
+    ]
+  },
+  {
+    "objectID": "knowledge-check.html#conclusion",
+    "href": "knowledge-check.html#conclusion",
+    "title": "Knowledge Check",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe core of R is creating objects using functions and operators. Before anything more advanced it is important to have a good understanding of objects, functions, and operators. You will get plenty of practice using these concepts in the other tutorials and in class.",
+    "crumbs": [
+      "R Basics",
+      "Knowledge Check"
+    ]
+  },
+  {
+    "objectID": "knowledge-check.html#knowledge-check",
+    "href": "knowledge-check.html#knowledge-check",
+    "title": "Knowledge Check",
+    "section": "Knowledge Check",
+    "text": "Knowledge Check\nThe knowledge checks are required for each class. Wrong answers are not counted against you. Complete all questions below, then submit your results to your instructor.\n\nWhat does the assignment operator &lt;- do?\n\nCompares two values\nDeletes an object\nCreates an object and assigns it a value\nPrints output to the console\n\n\n\nWhat is the output of the following code? x &lt;- c(10, 20, 30) then class(x)\n\n“data.frame”\n“numeric”\n“character”\n“vector”\n\n\n\nWhich of the following is a valid object name in R?\n\n2nd_attempt\nmy variable\nbudget_total\ndata!set\n\n\n\nWhat does str(my_data) tell you?\n\nThe sum of all values\nOnly the class of the object\nThe first 6 rows\nThe structure: class, dimensions, variable names, and classes\n\n\n\nWhat is the result of 10 != 10 in R?\n\nFALSE\nTRUE\nAn error\n0\n\n\n\nYou run mean(my_df$revenue) and store the result with avg_rev &lt;- mean(my_df$revenue). What is avg_rev?\n\nA function\nA dataframe\nA single numeric value (an object)\nA vector\n\n\n\nWhich operator would you use to check if city population is greater than or equal to 50,000?\n\n&gt;\n==\n&gt;=\n!=",
+    "crumbs": [
+      "R Basics",
+      "Knowledge Check"
+    ]
+  },
+  {
+    "objectID": "setup-summary.html",
+    "href": "setup-summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "flowchart LR\n    A[\"`**Step 1**\n    Scripts & Projects`\"] --&gt; B[\"`**Step 2**\n    Working Directory`\"] --&gt; C[\"`**Step 3**\n    Libraries`\"] --&gt; D[\"`**Step 4**\n    Import & Export`\"]\n    style A fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    style B fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    style C fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    style D fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "Summary"
+    ]
+  },
+  {
+    "objectID": "setup-summary.html#a-quick-and-dirty-setup",
+    "href": "setup-summary.html#a-quick-and-dirty-setup",
+    "title": "Summary",
+    "section": "A Quick and Dirty Setup",
+    "text": "A Quick and Dirty Setup\nAt this point, you should be familiar with working directories, libraries, and loading data. I like to start all of my R scripts by setting all of these, leaving the data cleaning, analysis, and visualization as a separate part of the script.\nHere is how I recommend starting your scripts:\n### Step 1: Open RStudio and open a script or project.\n\n### Step 2: Set Working Directory\nsetwd(\"file_path/project\")\n\n### Step 3: Load Necessary Libraries\nlibrary(package_name_1)\nlibrary(package_name_2)\n\n### Step 4: Load Data\ndata_object &lt;- read_csv(\"data_file_name.csv\")\nIf you receive no error messages, you should be ready to work with your data.\nYou should also note that if you set up everything as an R Project, you will not need to set your working directory. This allows you to just load your libraries and data without worrying about the working directory.",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "Summary"
+    ]
+  },
+  {
+    "objectID": "setup-summary.html#conclusion",
+    "href": "setup-summary.html#conclusion",
+    "title": "Summary",
+    "section": "Conclusion",
+    "text": "Conclusion\nUsing the four steps presented in this tutorial, you will be able to start your work in R and focus on cleaning, analyzing, visualizing, and communicating with data in R.\n\nQuick Reference\n\n\n\nStep\nCommand\nPurpose\n\n\n\n\n1\nOpen a script\nReproducible code\n\n\n2\nsetwd(\"path\")\nTell R where your files are\n\n\n3\nlibrary(pkg)\nLoad package functions\n\n\n4\nread_csv(\"file\")\nBring data into R",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "Summary"
+    ]
+  },
+  {
+    "objectID": "setup-libraries.html",
+    "href": "setup-libraries.html",
+    "title": "3. Libraries",
+    "section": "",
+    "text": "flowchart LR\n    A[\"`**Step 1**\n    Scripts & Projects`\"] --&gt; B[\"`**Step 2**\n    Working Directory`\"] --&gt; C[\"`**Step 3**\n    Libraries`\"] --&gt; D[\"`**Step 4**\n    Import & Export`\"]\n    style C fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "3. Libraries"
+    ]
+  },
+  {
+    "objectID": "setup-libraries.html#libraries",
+    "href": "setup-libraries.html#libraries",
+    "title": "3. Libraries",
+    "section": "Libraries",
+    "text": "Libraries\nThe power of R comes from user-created libraries. These are sometimes referred to as packages. To access these libraries in R you need to first install them with install.packages() and then load them with library().\nGood news is that you only need to install packages once, but you need to load them to your script at the start of every session. Loading a library will then give you access to the functions within the library.\nLet’s practice by loading the packages here and tidyverse:\n### Install the packages (only needed once)\ninstall.packages(c(\"here\",\"tidyverse\"))\n\n### Load the packages (needed every session)\nlibrary(here)\nlibrary(tidyverse)",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "3. Libraries"
+    ]
+  },
+  {
+    "objectID": "setup-libraries.html#getting-help",
+    "href": "setup-libraries.html#getting-help",
+    "title": "3. Libraries",
+    "section": "Getting help",
+    "text": "Getting help\nAll R packages on the CRAN network have accompanying documentation. By typing ? in front of a package name (after loading it with library()), you can access its documentation. Many packages also have introductions and tutorials.\nIf you have a question about a specific function in a package, type ?? in front of the function name:\n### Load packages first\nlibrary(here)\nlibrary(tidyverse)\n\n### Get package documentation\n?here\n?tidyverse\n\n### Search for function help\n??here",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "3. Libraries"
+    ]
+  },
+  {
+    "objectID": "setup-data.html",
+    "href": "setup-data.html",
+    "title": "4. Import & Export Data",
+    "section": "",
+    "text": "flowchart LR\n    A[\"`**Step 1**\n    Scripts & Projects`\"] --&gt; B[\"`**Step 2**\n    Working Directory`\"] --&gt; C[\"`**Step 3**\n    Libraries`\"] --&gt; D[\"`**Step 4**\n    Import & Export`\"]\n    style D fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "4. Import & Export Data"
+    ]
+  },
+  {
+    "objectID": "setup-data.html#importing-data",
+    "href": "setup-data.html#importing-data",
+    "title": "4. Import & Export Data",
+    "section": "Importing Data",
+    "text": "Importing Data\nOne of the biggest roadblocks to using R is getting data into R and accessible. R can only work with data when it is imported into R’s working memory and named as an object. Most datasets you will need to load into R are “.csv” files. But R supports loading and saving many different file formats, which can be determined by the letters after a saved file’s name like file_name.csv or file_name.xlsx.\nHere is how we load data into R:\ntest_data &lt;- read_csv(\"first_data.csv\")\n\n\n\n\n\n\nRun this example — load a dataset and check its class\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nWhich of the following is a class of test_data?\n\nvector\ncharacter\ndata.frame\nlist",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "4. Import & Export Data"
+    ]
+  },
+  {
+    "objectID": "setup-data.html#troubleshooting-file-names",
+    "href": "setup-data.html#troubleshooting-file-names",
+    "title": "4. Import & Export Data",
+    "section": "Troubleshooting file names",
+    "text": "Troubleshooting file names\nRemember R requires you to be very precise with names of files. Sometimes you might be getting error messages and can’t figure out why. The command dir() returns all the file names in your current working directory. I will sometimes run dir() and copy and paste the file name into read_csv().",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "4. Import & Export Data"
+    ]
+  },
+  {
+    "objectID": "setup-data.html#exporting-data",
+    "href": "setup-data.html#exporting-data",
+    "title": "4. Import & Export Data",
+    "section": "Exporting Data",
+    "text": "Exporting Data\nNow lets say you wanted to save an object as a “.csv”. Use the function write_csv():\nwrite_csv(test_data, \"my_output.csv\")",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "4. Import & Export Data"
+    ]
+  },
+  {
+    "objectID": "functions.html",
+    "href": "functions.html",
+    "title": "2. Functions",
+    "section": "",
+    "text": "flowchart LR\n    A((Objects)) --&gt; B((Functions)) --&gt; C((Operators))\n    style B fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px\nNow that you understand the nature of objects, it is important to understand functions — the other building block of programming in R.\nThe function performs some operation on an object. For example, class() is a function that returns an object’s class.\nFunctions can be broken down into this structure:\nnew_object_name &lt;- function(argument)\nArguments can be: 1. commands to feed the function, 2. objects, 3. other functions, 4. operators.",
+    "crumbs": [
+      "R Basics",
+      "2. Functions"
+    ]
+  },
+  {
+    "objectID": "functions.html#using-functions-on-objects",
+    "href": "functions.html#using-functions-on-objects",
+    "title": "2. Functions",
+    "section": "Using functions on objects",
+    "text": "Using functions on objects\nIn the case of class(first_df), the argument is a dataframe object. In the case of the function mean(), which calculates the average of a vector/column/variable, you need to specify the column you want it to run the function on.\nmean(first_df) returns an error. mean(first_df$pie_num) returns the mean of the column pie_num.\n\n\n\n\n\n\nRun this example — using mean() on a dataframe column\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "R Basics",
+      "2. Functions"
+    ]
+  },
+  {
+    "objectID": "functions.html#storing-function-output",
+    "href": "functions.html#storing-function-output",
+    "title": "2. Functions",
+    "section": "Storing function output",
+    "text": "Storing function output\nNow you can store the output of a function as an object, for example: avg_pie_num &lt;- mean(first_df$pie_num)\n\n\n\n\n\n\nRun this example — storing function output as an object\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "R Basics",
+      "2. Functions"
+    ]
+  },
+  {
+    "objectID": "functions.html#your-turn",
+    "href": "functions.html#your-turn",
+    "title": "2. Functions",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\nYour turn — use median() to find the median of pie_num, then store it in an object called med_pie\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nShow Solution\n\nmed_pie &lt;- median(first_df$pie_num)\nmed_pie\n\n\nWhat does mean(first_df) return?\n\nThe mean of all columns\n0\nAn error\nNA\n\n\n\nIn the code avg &lt;- mean(first_df$pie_num), what is avg?\n\nA function\nAn object storing the output of a function\nAn argument\nA dataframe",
+    "crumbs": [
+      "R Basics",
+      "2. Functions"
+    ]
+  },
+  {
+    "objectID": "functions.html#key-takeaway",
+    "href": "functions.html#key-takeaway",
+    "title": "2. Functions",
+    "section": "Key takeaway",
+    "text": "Key takeaway\nCreating objects through functions is essentially what you do in R. Everything else is really just various levels of increasingly sophisticated functions to accomplish similar objectives.\nClick Next to continue to Operators.",
+    "crumbs": [
+      "R Basics",
+      "2. Functions"
+    ]
+  },
+  {
+    "objectID": "setup-overview.html",
+    "href": "setup-overview.html",
+    "title": "Workflow: A Quick and Dirty Introduction",
+    "section": "",
+    "text": "flowchart LR\n    A[\"`**Step 1**\n    Scripts & Projects`\"] --&gt; B[\"`**Step 2**\n    Working Directory`\"] --&gt; C[\"`**Step 3**\n    Libraries`\"] --&gt; D[\"`**Step 4**\n    Import & Export`\"]\n    linkStyle default stroke:#adb5bd,stroke-width:2px",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "setup-overview.html#welcome",
+    "href": "setup-overview.html#welcome",
+    "title": "Workflow: A Quick and Dirty Introduction",
+    "section": "Welcome",
+    "text": "Welcome\nStarting a project in R can be a challenge even before you do anything related to statistics or data science. This tutorial is meant to give you a quick introduction on how to start doing stuff in R.\nUse the sidebar or the Next button at the bottom of each page to work through the four steps in order.",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "setup-overview.html#packages-used-in-this-tutorial",
+    "href": "setup-overview.html#packages-used-in-this-tutorial",
+    "title": "Workflow: A Quick and Dirty Introduction",
+    "section": "Packages used in this tutorial",
+    "text": "Packages used in this tutorial\n\nhere\ntidyverse",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "setup-overview.html#commands-used-in-this-tutorial",
+    "href": "setup-overview.html#commands-used-in-this-tutorial",
+    "title": "Workflow: A Quick and Dirty Introduction",
+    "section": "Commands used in this tutorial",
+    "text": "Commands used in this tutorial\n\n\n\nCommand\nPurpose\n\n\n\n\nsetwd()\nSet the working directory\n\n\ngetwd()\nGet the current working directory\n\n\ninstall.packages()\nInstall a package from CRAN\n\n\nlibrary()\nLoad a package into your session\n\n\n? and ??\nHelp documentation\n\n\ndir()\nList files in working directory\n\n\nread_csv()\nImport a CSV file\n\n\nwrite_csv()\nExport data to a CSV file\n\n\nrm()\nRemove objects from memory\n\n\n\nWhen you’re ready, click Next below to begin with Step 1.",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "setup-working-dir.html",
+    "href": "setup-working-dir.html",
+    "title": "2. Working Directory",
+    "section": "",
+    "text": "flowchart LR\n    A[\"`**Step 1**\n    Scripts & Projects`\"] --&gt; B[\"`**Step 2**\n    Working Directory`\"] --&gt; C[\"`**Step 3**\n    Libraries`\"] --&gt; D[\"`**Step 4**\n    Import & Export`\"]\n    style B fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "2. Working Directory"
+    ]
+  },
+  {
+    "objectID": "setup-working-dir.html#working-directory",
+    "href": "setup-working-dir.html#working-directory",
+    "title": "2. Working Directory",
+    "section": "Working Directory",
+    "text": "Working Directory\nThe working directory is the root folder location of your project. This is where R goes to find data, R scripts, and save data. There are two commands that will help you navigate your working directories: setwd() and getwd().\ngetwd() returns your current working directory and setwd() will set a new working directory file path.\nMany frustrations with R are rooted in setting the right working directory file path. First, working directories are specific to each computer. setwd() sets an absolute path. There are ways to set relative paths, which we will discuss in further detail in the R projects section of this tutorial. Second, working directory file paths on machines running Windows use back slashes (\\) while Macs use forward slashes (/).\nYou can manually set your working directory in RStudio by clicking Session &gt;&gt; Set Working Directory &gt;&gt; Choose Working Directory. Then you can navigate to a file path that you want to set as your working directory.\nAll of this can make your head spin, but as long as you make setting your working directory part of your initial workflow, it will become second nature in short order.\n\nWhich of the following allow you to set the working directory for your RStudio session?\n\nset_working_directory()\nsetwd()\ngetwd()\nSessions drop-down menu\n\n\n\nThe command setwd(user/documents/project_folder) returns an error. Identify all possible reasons the error message was generated:\n\nThe file path is not in quotation marks\nThe / does not work on Macs\nThe / does not work on Windows\nThe file path does not exist",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "2. Working Directory"
+    ]
+  },
+  {
+    "objectID": "setup-scripts.html",
+    "href": "setup-scripts.html",
+    "title": "1. Scripts & Projects",
+    "section": "",
+    "text": "flowchart LR\n    A[\"`**Step 1**\n    Scripts & Projects`\"] --&gt; B[\"`**Step 2**\n    Working Directory`\"] --&gt; C[\"`**Step 3**\n    Libraries`\"] --&gt; D[\"`**Step 4**\n    Import & Export`\"]\n    style A fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "1. Scripts & Projects"
+    ]
+  },
+  {
+    "objectID": "setup-scripts.html#scripts",
+    "href": "setup-scripts.html#scripts",
+    "title": "1. Scripts & Projects",
+    "section": "Scripts",
+    "text": "Scripts\nYou can type your R code into two places: either in the console (i.e., the bottom left corner of RStudio) or into a script (i.e., the top left corner of RStudio). It is good practice to do everything in a script because you can troubleshoot your code much more easily and reproduce everything you do.\nYou can open a new script by clicking the dropdown menu File &gt;&gt; New File &gt;&gt; R Script. Alternatively, in RStudio you can click on the icon that looks like a plus on top of a black sheet of paper. It will provide a dropdown menu that will allow you to open a new R script.\n\n\n\nOpening a new script in RStudio\n\n\nGo here for more information on R Scripts.",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "1. Scripts & Projects"
+    ]
+  },
+  {
+    "objectID": "setup-scripts.html#r-projects",
+    "href": "setup-scripts.html#r-projects",
+    "title": "1. Scripts & Projects",
+    "section": "R Projects",
+    "text": "R Projects\nA lot of set up in R is easy to organize using R projects. However, that is beyond the scope of this tutorial.\nGo here for information on R projects and setting one up.",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "1. Scripts & Projects"
+    ]
+  },
+  {
+    "objectID": "setup-scripts.html#starting-with-a-clean-slate",
+    "href": "setup-scripts.html#starting-with-a-clean-slate",
+    "title": "1. Scripts & Projects",
+    "section": "Starting with a clean slate",
+    "text": "Starting with a clean slate\nTo see if your script is working or just to start fresh, the absolute best practice is to restart RStudio to clear its memory. But you need to make a change to the global options first so it does not automatically load your last session.\nTo do this, go to Tools &gt;&gt; Global Options and uncheck “Restore .RData into workspace at startup”. This will clear the workspace every time.\nA second option, which people use when a quick reset is needed, is the function rm(list=ls()). This clears all objects in R memory, but it does not detach libraries you have loaded, nor does it reset global options. It is always recommended to restart RStudio when you want to work with a truly clean slate. But many times a quick rm(list=ls()) will suffice.",
+    "crumbs": [
+      "Workflow: A Quick and Dirty Introduction",
+      "1. Scripts & Projects"
+    ]
+  }
+]

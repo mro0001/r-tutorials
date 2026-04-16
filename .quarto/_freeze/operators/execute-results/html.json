@@ -1,0 +1,15 @@
+{
+  "hash": "f1b73ebaba10e2b83717a03fb8376f33",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"3. Operators\"\nengine: knitr\nfilters:\n  - webr\nwebr:\n  packages: []\n---\n\n```{mermaid}\n%%| fig-width: 8\n%%| fig-height: 2.5\nflowchart LR\n    A((Objects)) --> B((Functions)) --> C((Operators))\n    style C fill:#1a1a1a,stroke:#1a1a1a,color:#fff\n    linkStyle default stroke:#adb5bd,stroke-width:2px\n```\n\nWhile R can be boiled down to objects and functions, it also does a good\njob handling mathematical calculations and logic.\n\n::: {.panel-tabset}\n\n### Math Operators\n\nThe following commands are the basic arithmetic operators used in R.\n\n| Math           | Operator |\n|----------------|----------|\n| Addition       | `+`      |\n| Subtraction    | `-`      |\n| Multiplication | `*`      |\n| Division       | `/`      |\n| Exponent       | `^`      |\n\n::: {.callout-tip appearance=\"simple\"}\n## Try it yourself — experiment with each math operator\n:::\n\n```{webr-r}\nx <- 56\ny <- 914\n\nx + y\nx - y\nx * y\nx / y\nx^y\n```\n\n### Logic Operators\n\nOften, you will want to create an object with the help of some logical\noperators. The following are the logical operators used in R:\n\n| Logic                         | Operator |\n|-------------------------------|----------|\n| Less Than                     | `<`      |\n| Greater Than                  | `>`      |\n| Less Than or Equal to         | `<=`     |\n| Greater Than or Equal to      | `>=`     |\n| Equal to                      | `==`     |\n| *Not* Equal to                | `!=`     |\n| Or                            | `\\|`     |\n| And                           | `&`      |\n\nFor example, `logical_test <- pie == pie_not_number`\n\n::: {.callout-tip appearance=\"simple\"}\n## Run this example — logical comparisons return TRUE or FALSE\n:::\n\n```{webr-r}\npie_not_number <- c(3,\"x\",\"apple\", 7)\npie <- c(3,14,15,926)\n\nlogical_test <- pie == pie_not_number\nclass(logical_test)\nlogical_test\n```\n\nThis returns a new class of `logical` that is either TRUE or FALSE.\n\n::: {.callout-tip appearance=\"simple\"}\n## Run this example — try `and`, `or`, and `not` operators\n:::\n\n```{webr-r}\nanother_test <- 3 == 2+1\n\nx <- 4\ny <- 3\n\nand_statement <- x & y < 4\nor_statement <- x | y < 3\nnot_statement <- x != y\n\nanother_test\nand_statement\nor_statement\nnot_statement\n```\n\n:::\n\nClick **Next** to review what you've learned and complete the Knowledge Check.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
