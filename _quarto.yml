@@ -21,7 +21,7 @@ website:
             href: operators.qmd
           - text: "Knowledge Check"
             href: knowledge-check.qmd
-      - section: "Setup in R"
+      - section: "Workflow: A Quick and Dirty Introduction"
         contents:
           - text: "Overview"
             href: setup-overview.qmd

@@ -9,9 +9,13 @@ webr:
 
 ```{mermaid}
 %%| fig-width: 9
-%%| fig-height: 2.5
+%%| fig-height: 3
 flowchart LR
-    A["Step 1:<br>Scripts & Projects"] --> B["Step 2:<br>Working Directory"] --> C["Step 3:<br>Libraries"] --> D["Step 4:<br>Import & Export"]
+    A["`**Step 1**
+    Scripts & Projects`"] --> B["`**Step 2**
+    Working Directory`"] --> C["`**Step 3**
+    Libraries`"] --> D["`**Step 4**
+    Import & Export`"]
     style C fill:#1a1a1a,stroke:#1a1a1a,color:#fff
     linkStyle default stroke:#adb5bd,stroke-width:2px
 ```
