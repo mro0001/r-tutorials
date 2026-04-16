@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "R Tutorials"
+  page-navigation: true
+  sidebar:
+    style: "docked"
+    search: false
+    contents:
+      - section: "R Basics"
+        contents:
+          - text: "Overview"
+            href: index.qmd
+          - text: "1. Objects"
+            href: objects.qmd
+          - text: "2. Functions"
+            href: functions.qmd
+          - text: "3. Operators"
+            href: operators.qmd
+          - text: "Knowledge Check"
+            href: knowledge-check.qmd
+      - section: "Setup in R"
+        contents:
+          - text: "Overview"
+            href: setup-overview.qmd
+          - text: "1. Scripts & Projects"
+            href: setup-scripts.qmd
+          - text: "2. Working Directory"
+            href: setup-working-dir.qmd
+          - text: "3. Libraries"
+            href: setup-libraries.qmd
+          - text: "4. Import & Export Data"
+            href: setup-data.qmd
+          - text: "Summary"
+            href: setup-summary.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    mainfont: "Source Sans Pro"
+    fontsize: "1.05em"
+    toc: true
+    toc-depth: 3
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    include-after-body:
+      text: |
+        <script src="quiz.js" defer></script>

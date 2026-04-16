@@ -1,0 +1,38 @@
+---
+title: "Setup in R"
+---
+
+```{mermaid}
+%%| fig-width: 9
+%%| fig-height: 2.5
+flowchart LR
+    A["Step 1:\nScripts & Projects"] --> B["Step 2:\nWorking Directory"] --> C["Step 3:\nLibraries"] --> D["Step 4:\nImport & Export"]
+    linkStyle default stroke:#adb5bd,stroke-width:2px
+```
+
+## Welcome
+
+Starting a project in R can be a challenge even before you do anything related to statistics or data science. This tutorial is meant to give you a quick introduction on how to start doing stuff in R.
+
+Use the sidebar or the **Next** button at the bottom of each page to work through the four steps in order.
+
+## Packages used in this tutorial
+
+1. `here`
+2. `tidyverse`
+
+## Commands used in this tutorial
+
+| Command | Purpose |
+|---------|---------|
+| `setwd()` | Set the working directory |
+| `getwd()` | Get the current working directory |
+| `install.packages()` | Install a package from CRAN |
+| `library()` | Load a package into your session |
+| `?` and `??` | Help documentation |
+| `dir()` | List files in working directory |
+| `read_csv()` | Import a CSV file |
+| `write_csv()` | Export data to a CSV file |
+| `rm()` | Remove objects from memory |
+
+When you're ready, click **Next** below to begin with Step 1.

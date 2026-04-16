@@ -1,0 +1,94 @@
+---
+title: "2. Functions"
+engine: knitr
+filters:
+  - webr
+webr:
+  packages: []
+---
+
+```{mermaid}
+%%| fig-width: 8
+%%| fig-height: 2.5
+flowchart LR
+    A((Objects)) --> B((Functions)) --> C((Operators))
+    style B fill:#1a1a1a,stroke:#1a1a1a,color:#fff
+    linkStyle default stroke:#adb5bd,stroke-width:2px
+```
+
+Now that you understand the nature of objects, it is important to
+understand functions — the other building block of programming in R.
+
+The function performs some operation on an object. For example,
+`class()` is a function that returns an object's class.
+
+Functions can be broken down into this structure:
+
+`new_object_name <- function(argument)`
+
+Arguments can be: 1. commands to feed the function, 2. objects, 3. other
+functions, 4. operators.
+
+## Using functions on objects
+
+In the case of `class(first_df)`, the argument is a dataframe object. In
+the case of the function `mean()`, which calculates the average of a
+vector/column/variable, you need to specify the column you want it to
+run the function on.
+
+`mean(first_df)` returns an error. `mean(first_df$pie_num)` returns the
+mean of the column `pie_num`.
+
+::: {.callout-tip appearance="simple"}
+## Run this example — using `mean()` on a dataframe column
+:::
+
+```{webr-r}
+pie_not_number <- c(3,"x","apple", 7)
+pie <- c(3,14,15,926)
+alphabet <- c("a","b","c","d")
+alpha_is_vowel <- c(TRUE,FALSE,FALSE,FALSE)
+
+first_df <- data.frame(
+  alpha = alphabet,
+  pie_num = pie,
+  random_vec = pie_not_number,
+  vowel = alpha_is_vowel
+)
+
+mean(first_df$pie_num)
+```
+
+## Storing function output
+
+Now you can store the output of a function as an object, for example:
+`avg_pie_num <- mean(first_df$pie_num)`
+
+::: {.callout-tip appearance="simple"}
+## Run this example — storing function output as an object
+:::
+
+```{webr-r}
+pie_not_number <- c(3,"x","apple", 7)
+pie <- c(3,14,15,926)
+alphabet <- c("a","b","c","d")
+alpha_is_vowel <- c(TRUE,FALSE,FALSE,FALSE)
+
+first_df <- data.frame(
+  alpha = alphabet,
+  pie_num = pie,
+  random_vec = pie_not_number,
+  vowel = alpha_is_vowel
+)
+
+avg_pie_num <- mean(first_df$pie_num)
+avg_pie_num
+```
+
+## Key takeaway
+
+Creating objects through functions is essentially what you do in R.
+Everything else is really just various levels of increasingly
+sophisticated functions to accomplish similar objectives.
+
+Click **Next** to continue to Operators.

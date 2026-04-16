@@ -1,0 +1,52 @@
+---
+title: "Summary"
+---
+
+```{mermaid}
+%%| fig-width: 9
+%%| fig-height: 2.5
+flowchart LR
+    A["Step 1:\nScripts & Projects"] --> B["Step 2:\nWorking Directory"] --> C["Step 3:\nLibraries"] --> D["Step 4:\nImport & Export"]
+    style A fill:#1a1a1a,stroke:#1a1a1a,color:#fff
+    style B fill:#1a1a1a,stroke:#1a1a1a,color:#fff
+    style C fill:#1a1a1a,stroke:#1a1a1a,color:#fff
+    style D fill:#1a1a1a,stroke:#1a1a1a,color:#fff
+    linkStyle default stroke:#adb5bd,stroke-width:2px
+```
+
+## A Quick and Dirty Setup
+
+At this point, you should be familiar with working directories, libraries, and loading data. I like to start all of my R scripts by setting all of these, leaving the data cleaning, analysis, and visualization as a separate part of the script.
+
+Here is how I recommend starting your scripts:
+
+```r
+### Step 1: Open RStudio and open a script or project.
+
+### Step 2: Set Working Directory
+setwd("file_path/project")
+
+### Step 3: Load Necessary Libraries
+library(package_name_1)
+library(package_name_2)
+
+### Step 4: Load Data
+data_object <- read_csv("data_file_name.csv")
+```
+
+If you receive no error messages, you should be ready to work with your data.
+
+You should also note that if you set up everything as an R Project, you will not need to set your working directory. This allows you to just load your libraries and data without worrying about the working directory.
+
+## Conclusion
+
+Using the four steps presented in this tutorial, you will be able to start your work in R and focus on cleaning, analyzing, visualizing, and communicating with data in R.
+
+### Quick Reference
+
+| Step | Command | Purpose |
+|------|---------|---------|
+| 1 | Open a script | Reproducible code |
+| 2 | `setwd("path")` | Tell R where your files are |
+| 3 | `library(pkg)` | Load package functions |
+| 4 | `read_csv("file")` | Bring data into R |
