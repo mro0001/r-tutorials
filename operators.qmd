@@ -1,0 +1,106 @@
+---
+title: "3. Operators"
+engine: knitr
+filters:
+  - webr
+webr:
+  packages: []
+---
+
+```{mermaid}
+%%| fig-width: 8
+%%| fig-height: 2.5
+flowchart LR
+    A((Objects)) --> B((Functions)) --> C((Operators))
+    style C fill:#1a1a1a,stroke:#1a1a1a,color:#fff
+    linkStyle default stroke:#adb5bd,stroke-width:2px
+```
+
+While R can be boiled down to objects and functions, it also does a good
+job handling mathematical calculations and logic.
+
+::: {.panel-tabset}
+
+### Math Operators
+
+The following commands are the basic arithmetic operators used in R.
+
+| Math           | Operator |
+|----------------|----------|
+| Addition       | `+`      |
+| Subtraction    | `-`      |
+| Multiplication | `*`      |
+| Division       | `/`      |
+| Exponent       | `^`      |
+
+::: {.callout-tip appearance="simple"}
+## Try it yourself — experiment with each math operator
+:::
+
+```{webr-r}
+x <- 56
+y <- 914
+
+x + y
+x - y
+x * y
+x / y
+x^y
+```
+
+### Logic Operators
+
+Often, you will want to create an object with the help of some logical
+operators. The following are the logical operators used in R:
+
+| Logic                         | Operator |
+|-------------------------------|----------|
+| Less Than                     | `<`      |
+| Greater Than                  | `>`      |
+| Less Than or Equal to         | `<=`     |
+| Greater Than or Equal to      | `>=`     |
+| Equal to                      | `==`     |
+| *Not* Equal to                | `!=`     |
+| Or                            | `\|`     |
+| And                           | `&`      |
+
+For example, `logical_test <- pie == pie_not_number`
+
+::: {.callout-tip appearance="simple"}
+## Run this example — logical comparisons return TRUE or FALSE
+:::
+
+```{webr-r}
+pie_not_number <- c(3,"x","apple", 7)
+pie <- c(3,14,15,926)
+
+logical_test <- pie == pie_not_number
+class(logical_test)
+logical_test
+```
+
+This returns a new class of `logical` that is either TRUE or FALSE.
+
+::: {.callout-tip appearance="simple"}
+## Run this example — try `and`, `or`, and `not` operators
+:::
+
+```{webr-r}
+another_test <- 3 == 2+1
+
+x <- 4
+y <- 3
+
+and_statement <- x & y < 4
+or_statement <- x | y < 3
+not_statement <- x != y
+
+another_test
+and_statement
+or_statement
+not_statement
+```
+
+:::
+
+Click **Next** to review what you've learned and complete the Knowledge Check.

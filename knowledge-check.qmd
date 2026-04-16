@@ -1,0 +1,26 @@
+---
+title: "Knowledge Check"
+---
+
+```{mermaid}
+%%| fig-width: 8
+%%| fig-height: 2.5
+flowchart LR
+    A((Objects)) --> B((Functions)) --> C((Operators))
+    linkStyle default stroke:#adb5bd,stroke-width:2px
+```
+
+## Conclusion
+
+The core of R is creating objects using functions and operators. Before
+anything more advanced it is important to have a good understanding of
+objects, functions, and operators. You will get plenty of practice using
+these concepts in the other tutorials and in class.
+
+## Knowledge Check
+
+The knowledge checks are required for each class. If you have already
+completed them, then submit the knowledge check code to your instructor.
+If you have not completed it, submit your response to your instructor.
+Wrong answers are not counted against you, but you will not receive a
+code until the correct knowledge check responses have been provided.
