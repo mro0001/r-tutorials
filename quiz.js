@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (inp.checked) {
           lbl.classList.add("incorrect-selected");
         }
-        if (!isCorrect && correctIndices.indexOf(idx) !== -1) {
+        if (!isCorrect && attempts >= maxAttempts && correctIndices.indexOf(idx) !== -1) {
           lbl.classList.add("correct-reveal");
         }
       });

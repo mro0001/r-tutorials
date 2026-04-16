@@ -1,10 +1,5 @@
 ---
 title: "2. Working Directory"
-engine: knitr
-filters:
-  - webr
-webr:
-  packages: []
 ---
 
 ```{mermaid}
@@ -45,7 +40,7 @@ All of this can make your head spin, but as long as you make setting your workin
 **The command `setwd(user/documents/project_folder)` returns an error. Identify all possible reasons the error message was generated:**
 
 - [x] The file path is not in quotation marks
-- [x] The `/` does not work on Macs
-- [ ] The `/` does not work on Windows
+- [ ] The `/` does not work on Macs
+- [x] The `/` does not work on Windows
 - [x] The file path does not exist
 :::

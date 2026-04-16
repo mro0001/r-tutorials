@@ -19,8 +19,69 @@ these concepts in the other tutorials and in class.
 
 ## Knowledge Check
 
-The knowledge checks are required for each class. If you have already
-completed them, then submit the knowledge check code to your instructor.
-If you have not completed it, submit your response to your instructor.
-Wrong answers are not counted against you, but you will not receive a
-code until the correct knowledge check responses have been provided.
+The knowledge checks are required for each class. Wrong answers are not
+counted against you. Complete all questions below, then submit your
+results to your instructor.
+
+::: {.quiz data-id="kc1" data-type="single"}
+**What does the assignment operator `<-` do?**
+
+- [ ] Compares two values
+- [ ] Deletes an object
+- [x] Creates an object and assigns it a value
+- [ ] Prints output to the console
+:::
+
+::: {.quiz data-id="kc2" data-type="single"}
+**What is the output of the following code?** `x <- c(10, 20, 30)` then `class(x)`
+
+- [ ] "data.frame"
+- [x] "numeric"
+- [ ] "character"
+- [ ] "vector"
+:::
+
+::: {.quiz data-id="kc3" data-type="single"}
+**Which of the following is a valid object name in R?**
+
+- [ ] `2nd_attempt`
+- [ ] `my variable`
+- [x] `budget_total`
+- [ ] `data!set`
+:::
+
+::: {.quiz data-id="kc4" data-type="single"}
+**What does `str(my_data)` tell you?**
+
+- [ ] The sum of all values
+- [ ] Only the class of the object
+- [ ] The first 6 rows
+- [x] The structure: class, dimensions, variable names, and classes
+:::
+
+::: {.quiz data-id="kc5" data-type="single"}
+**What is the result of `10 != 10` in R?**
+
+- [x] FALSE
+- [ ] TRUE
+- [ ] An error
+- [ ] 0
+:::
+
+::: {.quiz data-id="kc6" data-type="single"}
+**You run `mean(my_df$revenue)` and store the result with `avg_rev <- mean(my_df$revenue)`. What is `avg_rev`?**
+
+- [ ] A function
+- [ ] A dataframe
+- [x] A single numeric value (an object)
+- [ ] A vector
+:::
+
+::: {.quiz data-id="kc7" data-type="single"}
+**Which operator would you use to check if city population is greater than or equal to 50,000?**
+
+- [ ] `>`
+- [ ] `==`
+- [x] `>=`
+- [ ] `!=`
+:::

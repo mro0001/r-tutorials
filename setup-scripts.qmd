@@ -1,10 +1,5 @@
 ---
 title: "1. Scripts & Projects"
-engine: knitr
-filters:
-  - webr
-webr:
-  packages: []
 ---
 
 ```{mermaid}

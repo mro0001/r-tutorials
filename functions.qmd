@@ -85,6 +85,50 @@ avg_pie_num <- mean(first_df$pie_num)
 avg_pie_num
 ```
 
+## Your turn
+
+::: {.callout-tip appearance="simple"}
+## Your turn — use `median()` to find the median of `pie_num`, then store it in an object called `med_pie`
+:::
+
+```{webr-r}
+pie <- c(3,14,15,926)
+alphabet <- c("a","b","c","d")
+
+first_df <- data.frame(
+  alpha = alphabet,
+  pie_num = pie
+)
+
+# Find the median of pie_num and store it in med_pie
+
+```
+
+<details><summary>Show Solution</summary>
+```r
+med_pie <- median(first_df$pie_num)
+med_pie
+```
+</details>
+
+::: {.quiz data-id="q9" data-type="single"}
+**What does `mean(first_df)` return?**
+
+- [ ] The mean of all columns
+- [ ] 0
+- [x] An error
+- [ ] NA
+:::
+
+::: {.quiz data-id="q12" data-type="single"}
+**In the code `avg <- mean(first_df$pie_num)`, what is `avg`?**
+
+- [ ] A function
+- [x] An object storing the output of a function
+- [ ] An argument
+- [ ] A dataframe
+:::
+
 ## Key takeaway
 
 Creating objects through functions is essentially what you do in R.

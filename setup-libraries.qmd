@@ -1,10 +1,5 @@
 ---
 title: "3. Libraries"
-engine: knitr
-filters:
-  - webr
-webr:
-  packages: []
 ---
 
 ```{mermaid}
