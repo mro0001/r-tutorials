@@ -33,7 +33,7 @@ All of this can make your head spin, but as long as you make setting your workin
 - [ ] set_working_directory()
 - [x] setwd()
 - [ ] getwd()
-- [x] Sessions drop-down menu
+- [x] Session menu in RStudio
 :::
 
 ::: {.quiz data-id="sq2" data-type="multi"}

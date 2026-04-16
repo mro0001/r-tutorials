@@ -34,19 +34,20 @@ library(tidyverse)
 
 ## Getting help
 
-All R packages on the CRAN network have accompanying documentation. By typing `?` in front of a package name (after loading it with `library()`), you can access its documentation. Many packages also have introductions and tutorials.
+All R packages on the CRAN network have accompanying documentation. Use `?` to look up help on a specific function or package, and `??` to do a broad keyword search when you don't know the exact name:
 
-If you have a question about a specific function in a package, type `??` in front of the function name:
+- `?mean` — opens the help page for the `mean()` function directly
+- `??regression` — searches all installed help pages for the word "regression"
 
 ```r
 ### Load packages first
 library(here)
 library(tidyverse)
 
-### Get package documentation
+### Get help on a specific function or package
 ?here
 ?tidyverse
 
-### Search for function help
+### Search broadly if you don't know the exact name
 ??here
 ```
